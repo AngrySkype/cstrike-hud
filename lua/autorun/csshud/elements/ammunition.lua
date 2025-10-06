@@ -73,6 +73,9 @@ if CLIENT then
     local weapon = LocalPlayer():GetActiveWeapon();
     local primary = weapon:GetPrimaryAmmoType();
     local reserve = LocalPlayer():GetAmmoCount(primary);
+    if reserve >= 999 then
+      reserve = 999
+    end
     if (primary <= 0) then return end;
     if (weapon:Clip1() > -1) then
         self:DrawClip(x, y, weapon:Clip1(), reserve);

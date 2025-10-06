@@ -85,8 +85,8 @@ if CLIENT then
   });
 
   surface.CreateFont("csshud_killfeed",{
-      font = "Tahoma",
-      size = 14,
+      font = "Verdana",
+      size = 24,
       weight = 1000,
       antialiasing = true,
       additive = false
